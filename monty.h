@@ -39,7 +39,7 @@ typedef struct instruction_s
 extern int SQ;
 instruction_t *parse_line(char *line);
 void free_stack(stack_t *head);
-char get_opcode(char *string);
+char *get_opcode(char *string);
 int is_int(char *string);
 void push(stack_t **stack, unsigned int line_number);
 void pall(stack_t **stack, unsigned int line_number);
@@ -57,7 +57,6 @@ void pstr(stack_t **stack, unsigned int line_number);
 void rotl(stack_t **stack, unsigned int line_number);
 void rotr(stack_t **stack, unsigned int line_number);
 void stack(stack_t **stack, unsigned int line_number);
-void queue(stack_t **stack, unsigned int line_number);
 void queue(stack_t **stack, unsigned int line_number);
 
 #endif
